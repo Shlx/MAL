@@ -287,6 +287,14 @@ a[href$="Death_Note"]::after {
     content: "\a Just according to keikaku.";
 }
 
+a[href$="Fate/Zero"]::after {
+    content: "\a Kotomine...";
+}
+
+a[href$="Fate/Zero_2nd_Season"]::after {
+    content: "\a Kirei!";
+}
+
 a[href$="Mawaru_Penguindrum"]::after {
     content: "\a Seizon Senryaku!";
 }
