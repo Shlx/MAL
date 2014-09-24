@@ -296,35 +296,6 @@ td[width="70"] {
     white-space: pre-wrap;
 }
 
-a[href$="Aldnoah.Zero"]::after {
-    content: "\a Look, sis! Shooting stars!";
-}
-
-a[href$="Baccano!"]::after {
-    content: "\a Wasn't he just dead a minute ago?";
-}
-
-a[href$="FLCL"]::after {
-    content: "\a Where are my eyebrows? I've gotta find my eyebrows!";
-}
-
-a[href$="Hataraku_Maou-sama!"]::after {
-    content: "\a KAT-SU-DON...I see. The very name rings with power!";
-}
-
-a[href$="Mahou_Shoujo_Madoka★Magica"]::after {
-    content: "\a" url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
-                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
-                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
-                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
-                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
-                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png");
-}
-
-a[href$="Mahou_Shoujo_Madoka★Magica_Movie_3:_Hangyaku_no_Monogatari"]::after {
-    content: "\a I just don't understand at all!";
-}
-
 a[href$="Neon_Genesis_Evangelion"]::after {
     content: "\a Congratulations!";
 }
@@ -332,14 +303,6 @@ a[href$="Neon_Genesis_Evangelion"]::after {
 a[href$="Neon_Genesis_Evangelion:_The_End_of_Evangelion"]::after {
     content: "\a TUMBLING DOWN TUMBLING DOWN TUMBLING DOWN";
     font-style: oblique;
-}
-
-a[href$="Nichijou"]::after {
-    content: "\a SUPER ULTRA GREAT DELICIOUS WONDERFUL BAD";
-}
-
-a[href$="Panty_&_Stocking_with_Garterbelt"]::after {
-    content: "\a I see you talking, but all I hear is syphilis!"
 }
 
 a[href$="Steins;Gate"]::after {
