@@ -1,0 +1,366 @@
+/*
+// Theme by Rob Kellett (https://kelle.tt)
+*/
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+/*
+// Self-explanatory
+*/
+html {
+    font-size: 12pt;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: "Lato", sans-serif;
+    background:  url('http://i.imgur.com/FM5GP3c.jpg') top right/cover no-repeat fixed;
+}
+
+#mal_control_strip {
+    background: rgba(0, 0, 0, 0.25) !important;
+    position: relative;
+}
+
+#mal_control_strip tbody {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#mal_control_strip::before {
+    border-bottom: 0.15rem solid white;
+}
+
+#mal_control_strip * {
+    font-family: "Lato", sans-serif !important;
+    font-size: 10pt !important;
+}
+
+#mal_control_strip a {
+    text-decoration: none !important;
+}
+
+#mal_control_strip a:hover {
+    text-decoration: underline !important;
+}
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links {
+    border-right: none !important;
+}
+
+/*
+// Determines the positioning of your list
+*/
+#list_surround {
+    margin: 0 auto 0 7.5vw;
+    padding: 1em;
+    width: 40vw;
+    min-width: 30rem;
+    position: relative;
+    border-left: 0.15rem solid white;
+    border-right: 0.15rem solid white;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 50rem), (orientation: portrait) {
+    #list_surround {
+        margin: 0 auto;
+        width: 90%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 30rem) {
+    html {
+        font-size: 8pt;
+    }
+}
+
+#list_surround::before {
+    margin: -1em;
+}
+
+#list_surround::before, #mal_control_strip::before {
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: #82767B url('http://i.imgur.com/qVUcTDr.jpg') top right/cover no-repeat fixed;
+    z-index: -1;
+}
+
+/*
+// All links on your list
+*/
+a {
+    color: white;
+    text-shadow: none;
+    transition: color, text-shadow 0.1s;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-shadow: 0 0 0.5em white;
+    text-decoration: underline;
+}
+
+/*
+// Alternating row color 1  &amp; 2
+*/
+.td1, .td2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    transition: background 0.1s;
+    padding: 0.5em;
+}
+
+table:not([align="center"]) {
+    background: transparent;
+    transition: background 0.33s;
+    margin-bottom: 5px;
+}
+
+table:not([align="center"]):hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+br {
+    display: none;
+}
+
+/*
+// No background effects for the table headers
+*/
+.header_cw + table::before, .header_completed + table::before, .header_onhold + table::before, .header_ptw + table::before,
+.header_cw + table:hover, .header_completed + table:hover, .header_onhold + table:hover, .header_ptw + table:hover {
+    background: transparent;
+}
+
+/*
+// This represents the "Anime Title", "Score", "# Eps" columns
+*/
+.table_header {
+    padding: 0 0.5em;
+}
+
+.table_header[width="45"] {
+    padding: 0 0.75em;
+}
+
+/*
+// Controls the select form decoration (the drop down select box)
+*/
+.form {
+    border-width: 1px 1px 1px 1px;
+    border-color: #ABABAB;
+    border-style: solid;
+    color: #000000;
+    padding: 2px;
+    font-size: 11.00px;
+    font-family: Verdana, Arial;
+}
+
+/* Which 'status' up top is selected? */
+.status_selected {
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.25);
+    width: 33.3%;
+    line-height: 2em;
+    display: inline-block;
+}
+
+.status_not_selected {
+    width: 33.3%;
+    line-height: 2em;
+    display: inline-block;
+}
+
+/*
+Header classes for Currently Watching, Completed, Dropped, etc...
+*/
+.header_title {
+    font-size: 2em;
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.category_totals {
+  display: none;
+}
+
+#grand_totals {
+    display: none;
+}
+
+/* header_al is thesurrounding "User's Anime List" at the top */
+.header_al {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* header_al_links is thewith your "Profile" and "MyAnimeList home" links */
+.header_al_links {}
+
+/* controls what styles you can give to all the anime titles in your list */
+.animetitle {
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.animetitle ~ small {
+    float: left;
+    text-align: center;
+    margin-left: -0.5rem;
+    margin-bottom: -0.5rem;
+    margin-right: 100%;
+    margin-top: 0.5rem;
+    font-size: 0.67rem;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 0 1rem 0 0;
+    width: 6rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+.td1 div, .td2 div {
+    display: none;
+}
+
+.td1[width="45"], .td2[width="45"] {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+td[width="45"], td[width="50"] {
+    width: 3rem;
+}
+
+td[width="70"] {
+    width: 4rem;
+}
+
+.header_completed ~ table td[width="45"] {
+    display: table-cell;
+}
+
+.header_completed ~ table td[width="70"], table td[width="45"], .header_ptw ~ table td[width="45"] {
+    display: none;
+}
+
+/*
+// 10/10 scores
+*/
+/*
+#more18679 + table td[width="45"]::after, /* Madoka /
+#more11979 + table td[width="45"]::after, /* Madoka: Rebellion /
+#more98    + table td[width="45"]::after, /* Evangelion /
+#more3588  + table td[width="45"]::after  /* Steins;Gate / {
+    content: " " url('https://kelle.tt/image/kreygasm.png');
+    position: relative;
+    top: 3px;
+}
+*/
+/*
+// Comments
+*/
+.td1 a::after, .td2 a::after {
+    font-weight: normal;
+    font-size: 0.67em;
+    color: rgba(255, 255, 255, 0.67);
+    text-shadow: none;
+    white-space: pre-wrap;
+}
+
+a[href$="Aldnoah.Zero"]::after {
+    content: "\a Look, sis! Shooting stars!";
+}
+
+a[href$="Baccano!"]::after {
+    content: "\a Wasn't he just dead a minute ago?";
+}
+
+a[href$="FLCL"]::after {
+    content: "\a Where are my eyebrows? I've gotta find my eyebrows!";
+}
+
+a[href$="Hataraku_Maou-sama!"]::after {
+    content: "\a KAT-SU-DON...I see. The very name rings with power!";
+}
+
+a[href$="Mahou_Shoujo_Madoka★Magica"]::after {
+    content: "\a" url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
+                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
+                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
+                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
+                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png")
+                  url("https://kelle.tt/image/kreygasm.png") url("https://kelle.tt/image/kreygasm.png");
+}
+
+a[href$="Mahou_Shoujo_Madoka★Magica_Movie_3:_Hangyaku_no_Monogatari"]::after {
+    content: "\a I just don't understand at all!";
+}
+
+a[href$="Neon_Genesis_Evangelion"]::after {
+    content: "\a Congratulations!";
+}
+
+a[href$="Neon_Genesis_Evangelion:_The_End_of_Evangelion"]::after {
+    content: "\a TUMBLING DOWN TUMBLING DOWN TUMBLING DOWN";
+    font-style: oblique;
+}
+
+a[href$="Nichijou"]::after {
+    content: "\a SUPER ULTRA GREAT DELICIOUS WONDERFUL BAD";
+}
+
+a[href$="Panty_&_Stocking_with_Garterbelt"]::after {
+    content: "\a I see you talking, but all I hear is syphilis!"
+}
+
+a[href$="Steins;Gate"]::after {
+    content: "\a Bananas have no memories.";
+}
+
+/*
+copyright contains the "Producted by Garrett Gyssler" text
+DO NOT REMOVE OR HIDE THIS DIV
+IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
+*/
+#copyright {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#copyright::before {
+    white-space: pre-wrap;
+    content: "Theme by Rob Kellett (kelle.tt)\a"
+}
+
+/* MAL seems to duplicate CSS when I upload it, so I
+   leave this comment open to comment out the second
+   copy. Remove this if it causes problems for you.
