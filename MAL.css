@@ -287,6 +287,10 @@ a[href$="Death_Note"]::after {
     content: "\a Just according to keikaku.";
 }
 
+a[href$="Elfen_Lied"]::after {
+    content: "\a \"I thought this was a vacant house...\"";
+}
+
 a[href$="Fate/Zero"]::after {
     content: "\a Kotomine...";
 }
@@ -300,11 +304,11 @@ a[href$="Mahouka_Koukou_no_Rettusei"]::after {
 }
 
 a[href$="Mawaru_Penguindrum"]::after {
-    content: "\a Seizon Senryaku!";
+    content: "\a \"Seizon Senryaku!\"";
 }
 
 a[href$="Steins;Gate"]::after {
-    content: "\a You must stop World War III.";
+    content: "\a \"You must stop World War III.\"";
 }
 
 /*
