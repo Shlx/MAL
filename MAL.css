@@ -273,19 +273,6 @@ td[width="70"] {
 }
 
 /*
-// 10/10 scores
-*/
-
-#more18679 + table td[width="45"]::after, /* Madoka */
-#more11979 + table td[width="45"]::after, /* Madoka: Rebellion */
-#more98    + table td[width="45"]::after, /* Evangelion */
-#more3588  + table td[width="45"]::after  /* Steins;Gate */ {
-    content: " " url('https://kelle.tt/image/kreygasm.png');
-    position: relative;
-    top: 3px;
-}
-
-/*
 // Comments
 */
 .td1 a::after, .td2 a::after {
@@ -296,17 +283,16 @@ td[width="70"] {
     white-space: pre-wrap;
 }
 
-a[href$="Neon_Genesis_Evangelion"]::after {
-    content: "\a Congratulations!";
+a[href$="Death_Note"]::after {
+    content: "\a Just according to keikaku.";
 }
 
-a[href$="Neon_Genesis_Evangelion:_The_End_of_Evangelion"]::after {
-    content: "\a TUMBLING DOWN TUMBLING DOWN TUMBLING DOWN";
-    font-style: oblique;
+a[href$="Mawaru_Penguindrum"]::after {
+    content: "\a Seizon Senryaku!";
 }
 
 a[href$="Steins;Gate"]::after {
-    content: "\a Bananas have no memories.";
+    content: "\a You must stop World War III.";
 }
 
 /*
