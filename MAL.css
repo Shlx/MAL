@@ -275,16 +275,16 @@ td[width="70"] {
 /*
 // 10/10 scores
 */
-/*
-#more18679 + table td[width="45"]::after, /* Madoka /
-#more11979 + table td[width="45"]::after, /* Madoka: Rebellion /
-#more98    + table td[width="45"]::after, /* Evangelion /
-#more3588  + table td[width="45"]::after  /* Steins;Gate / {
+
+#more18679 + table td[width="45"]::after, /* Madoka */
+#more11979 + table td[width="45"]::after, /* Madoka: Rebellion */
+#more98    + table td[width="45"]::after, /* Evangelion */
+#more3588  + table td[width="45"]::after  /* Steins;Gate */ {
     content: " " url('https://kelle.tt/image/kreygasm.png');
     position: relative;
     top: 3px;
 }
-*/
+
 /*
 // Comments
 */
