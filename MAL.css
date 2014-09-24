@@ -296,10 +296,10 @@ a[href$="Fate/Zero"]::after {
 }
 
 a[href$="Fate/Zero_2nd_Season"]::after {
-    content: "\a ...Kirei";
+    content: "\a ...Kirei!";
 }
 
-a[href$="Mahouka_Koukou_no_Rettusei"]::after {
+a[href$="Mahouka_Koukou_no_Rettousei"]::after {
     content: "\a I'm the best. Just the best.";
 }
 
