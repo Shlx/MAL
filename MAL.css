@@ -307,6 +307,10 @@ a[href$="Mawaru_Penguindrum"]::after {
     content: "\a \"Seizon Senryaku!\"";
 }
 
+a[href$="Samurai_Flamenco"]::after {
+    content: "\a I-It's still just a dream, r-right guys?";
+}
+
 a[href$="Steins;Gate"]::after {
     content: "\a \"You must stop World War III.\"";
 }
