@@ -303,6 +303,10 @@ a[href$="Hunter_x_Hunter_(2011)"]::after {
     content: "\a \"Komugi, are you still there?\" ;_;";
 }
 
+a[href$="Kyoukai_no_Kanata"]::after {
+    content: "\a \"How unpleasant.\"";
+}
+
 a[href$="Mahouka_Koukou_no_Rettousei"]::after {
     content: "\a I'm the best. Just the best.";
 }
