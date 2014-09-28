@@ -287,10 +287,6 @@ a[href$="Death_Note"]::after {
     content: "\a Just according to keikaku.";
 }
 
-a[href$="Elfen_Lied"]::after {
-    content: "\a \"I thought this was a vacant house...\"";
-}
-
 a[href$="Fate/Zero"]::after {
     content: "\a Kotomine...";
 }
