@@ -316,7 +316,7 @@ a[href$="Samurai_Flamenco"]::after {
 }
 
 a[href$="Steins;Gate"]::after {
-    content: "\a \"You must stop World War III.\"";
+    content: "\a \"Deceive your other self. Deceive the world.\"";
 }
 
 /*
