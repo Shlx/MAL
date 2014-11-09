@@ -296,7 +296,7 @@ a[href$="Fate/Zero_2nd_Season"]::after {
 }
 
 a[href$="Hunter_x_Hunter_(2011)"]::after {
-    content: "\a \"Komugi, are you still there?\" ;_;";
+    content: "\a \"Komugi, are you still there?\"";
 }
 
 a[href$="Kyoukai_no_Kanata"]::after {
