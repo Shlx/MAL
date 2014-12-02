@@ -287,12 +287,8 @@ a[href$="Death_Note"]::after {
     content: "\a Just according to keikaku.";
 }
 
-a[href$="Fate/Zero"]::after {
-    content: "\a Kotomine...";
-}
-
-a[href$="Fate/Zero_2nd_Season"]::after {
-    content: "\a ...Kirei!";
+a[href$="Fate/stay night: Unlimited Blade Works (TV)"]::after {
+    content: "\a YOROKOBE, SHOUNEN";
 }
 
 a[href$="Hunter_x_Hunter_(2011)"]::after {
