@@ -307,8 +307,8 @@ a[href$="Mawaru_Penguindrum"]::after {
     content: "\a \"Seizon Senryaku!\"";
 }
 
-a[href$="Samurai_Flamenco"]::after {
-    content: "\a What the FUCK";
+a[href$="Mahou_Shoujo_Madoka★Magica"]::after {
+    content: "\a\"So, if you ever feel like dying for the sake of the universe, just let me know.\"";
 }
 
 a[href$="Steins;Gate"]::after {
