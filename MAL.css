@@ -308,7 +308,7 @@ a[href$="Mawaru_Penguindrum"]::after {
 }
 
 a[href$="Mahou_Shoujo_Madoka★Magica"]::after {
-    content: "\a \"So, if you ever feel like dying for the sake of the universe, just let me know.\"";
+    content: "\a \"That which begins with a prayer of hope ends with a curse of despair.\"";
 }
 
 a[href$="Steins;Gate"]::after {
