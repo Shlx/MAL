@@ -283,30 +283,6 @@ td[width="70"] {
     white-space: pre-wrap;
 }
 
-a[href$="Death_Note"]::after {
-    content: "\a Just according to keikaku.";
-}
-
-a[href$="Fate/stay_night:_Unlimited_Blade_Works_(TV)"]::after {
-    content: "\a YOROKOBE, SHOUNEN";
-}
-
-a[href$="Hunter_x_Hunter_(2011)"]::after {
-    content: "\a \"Komugi, are you still there?\"";
-}
-
-a[href$="Kyoukai_no_Kanata"]::after {
-    content: "\a \"How unpleasant.\"";
-}
-
-a[href$="Mahouka_Koukou_no_Rettousei"]::after {
-    content: "\a I'm the best. Just the best.";
-}
-
-a[href$="Mawaru_Penguindrum"]::after {
-    content: "\a \"Seizon Senryaku!\"";
-}
-
 a[href$="Mahou_Shoujo_Madoka★Magica"]::after {
     content: "\a \"That which begins with a prayer of hope ends with a curse of despair.\"";
 }
