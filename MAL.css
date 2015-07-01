@@ -291,6 +291,10 @@ a[href$="Steins;Gate"]::after {
     content: "\a \"Deceive your other self. Deceive the world.\"";
 }
 
+a[href$="Tengen_Toppa_Gurren_Lagann"]::after {
+    content: "\a \"They are negating the probability of us blocking their attack.\"";
+}
+
 /*
 copyright contains the "Producted by Garrett Gyssler" text
 DO NOT REMOVE OR HIDE THIS DIV
